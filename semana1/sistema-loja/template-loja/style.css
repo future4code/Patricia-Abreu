@@ -1,0 +1,15 @@
+body {
+    background: #DCDCDC;
+}
+
+.header {
+min-height: 60px;
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+border-bottom: 1 px solid #ccc;
+background: #DCDCDC;
+z-index: 2;
+display: table-header-group;
+}
