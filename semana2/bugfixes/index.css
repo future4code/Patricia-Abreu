@@ -27,6 +27,7 @@ button:focus {
 
 img {
     width: 50px; /* Imagem reduzida em 50% */
+    height: auto;
 }
 
 div>p:first-child {
@@ -34,7 +35,8 @@ div>p:first-child {
 }
 
 div img {
-    background: black;
+    width: auto; 
+    background: none; /* Retirada do fundo preto que ficava na imagem da lupa (busca) e da calça (tabela decompras) */
 }
 
 .botao-amarelo {
@@ -98,7 +100,7 @@ div:last-child {
 }
 
 table {
-    width: 80%; /* Diminuição da tabela */
+    width: 50%; /* Diminuição da tabela */
     margin: auto; /* Centralização da tabela */
     text-align: center; /* Centralização do texto */
 }
