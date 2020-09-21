@@ -118,11 +118,15 @@ td button {
     color: black;
 }
 
+button:hover, button:active { /* Seção criada para adicionar efeitos de clique aos botões de 'comprar' */
+    background-color: #b4a048;
+    color: white;
+} 
+
 .container-do-search {
     margin-top: 20px;
     height: 100px;
 }
-
 
 #back-button {
     background-color: white;
@@ -135,5 +139,6 @@ td button {
 }
 
 #back-button:hover {
-    background-color: #635a3d
+    background-color: #635a3d; /* Adição do efeito de clique no botão 'voltar' */
+    color: white;
 }
