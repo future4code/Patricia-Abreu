@@ -19,10 +19,15 @@ h2 {
 input {
     height: 20px;
     width: 500px;
-}
+    background: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;/* retirada das bordas da esquerda, direita e topo */
+    }
 
 button:focus {
     color: white;
+
 }
 
 img {
