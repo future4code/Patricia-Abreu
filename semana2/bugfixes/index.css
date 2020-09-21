@@ -98,7 +98,8 @@ div:last-child {
 }
 
 table {
-    width: 0%;
+    width: 80%; /* Diminuição da tabela */
+    margin: auto; /* Centralização da tabela */
     text-align: center; /* Centralização do texto */
 }
 
