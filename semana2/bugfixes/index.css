@@ -36,7 +36,7 @@ div>p:first-child {
 
 div img {
     width: auto; 
-    background: none; /* Retirada do fundo preto que ficava na imagem da lupa (busca) e da calça (tabela decompras) */
+    background: none; /* Retirada do fundo preto que ficava na imagem da lupa (busca) e da calça (tabela de compras) */
 }
 
 .botao-amarelo {
@@ -103,6 +103,11 @@ table {
     width: 50%; /* Diminuição da tabela */
     margin: auto; /* Centralização da tabela */
     text-align: center; /* Centralização do texto */
+}
+
+table img { /* Adicionei esta seção para padronizar o tamanho das imagens da tabela de compras */
+    width: 50px;
+    height: auto;
 }
 
 td button {
