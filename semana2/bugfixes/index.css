@@ -28,7 +28,11 @@ input {
 
 button:focus {
     color: white;
+}
 
+ol li { /* Seção adicionada para numerar a lista */
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
 }
 
 img {
@@ -84,10 +88,6 @@ div img {
 #container-de-descricao>ol {
     padding: 15px 0px;
     }
-
-.container ol {
-    list-style-type: decimal;
-}
 
 #container-para-comprar {
     background-color: #e7eb90;
