@@ -30,7 +30,7 @@ button:focus {
     color: white;
 }
 
-ol li { /* Seção adicionada para numerar a lista */
+ol li { /* Seção adicionada para numerar a lista ordenada */
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
 }
