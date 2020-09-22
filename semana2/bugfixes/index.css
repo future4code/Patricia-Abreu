@@ -1,0 +1,156 @@
+/** 
+  *
+  *  ESTILOS GERAIS 
+  *
+  **/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto; /* Padronização da font para Roboto */
+}
+
+h2 {
+    background-color: #fe7e02;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    text-align: center;
+}
+
+input {
+    height: 20px;
+    width: 500px;
+    background: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;/* retirada das bordas da esquerda, direita e topo */
+    }
+
+button:focus {
+    color: white;
+}
+
+ol li { /* Seção adicionada para numerar a lista */
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+}
+
+img {
+    width: 50px; /* Imagem reduzida em 50% */
+    height: auto;
+}
+
+div>p:first-child {
+    display: inline;
+}
+
+div img {
+    width: auto; 
+    background: none; /* Retirada do fundo preto que ficava na imagem da lupa (busca) e da calça (tabela de compras) */
+}
+
+.botao-amarelo {
+    background-color: #ffaf43;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.botao-amarelo:hover {
+    background-color: #c44f00;
+}
+
+.container {
+    height: 500px;
+    text-align: center;
+}
+
+.icone {
+    height: 15px;
+    width: 30px;
+    height: auto;
+} 
+
+
+/** 
+  *
+  *  ESTILOS HOME 
+  *
+  **/
+
+#container-de-descricao {
+    background-color: #2274a5;
+    color: white;
+}
+
+#container-de-descricao>ol {
+    padding: 15px 0px;
+    }
+
+#container-para-comprar {
+    background-color: #e7eb90;
+}
+
+#container-para-comprar>p {
+    color: #c44f00;
+    padding: 100px 0;
+    font-size: 60px;
+}
+
+
+/**
+  *
+  *  ESTILOS COMPRAR 
+  *
+  **/
+
+div:nth-child(2),
+div:last-child {
+    text-align: center;
+}
+
+table {
+    width: 50%; /* Diminuição da tabela */
+    margin: auto; /* Centralização da tabela */
+    text-align: center; /* Centralização do texto */
+}
+
+table img { /* Adicionei esta seção para padronizar o tamanho das imagens da tabela de compras */
+    width: 50px;
+    height: auto;
+}
+
+td button {
+    background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+}
+
+button:hover, button:active { /* Seção criada para adicionar efeitos de clique aos botões de 'comprar' */
+    background-color: #b4a048;
+    color: white;
+} 
+
+.container-do-search {
+    margin-top: 20px;
+    height: 100px;
+}
+
+#back-button {
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+}
+
+#back-button:hover {
+    background-color: #635a3d; /* Adição do efeito de clique no botão 'voltar' */
+    color: white;
+}
