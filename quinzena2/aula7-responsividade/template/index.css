@@ -1,0 +1,92 @@
+body {
+    width: auto;
+    height: 1024px;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    border: 1px solid black;
+}
+
+#first-block {
+    background-color: red;
+    height: 100px;
+}
+
+.blue-block {
+    background-color: blue;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.yellow-block {
+    background-color: yellow;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.green-block {
+    background-color: green;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.white-block {
+    background-color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#main-container {
+    display: grid;
+    border: none;
+    height: 30px;
+    width: 100%;
+}
+
+#containeres {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 300px;
+    width: auto;
+    margin: 1em;
+    gap: 1em;
+    border: none;
+}
+
+#black-blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 370px;
+    width: auto;
+    margin: 1em;
+    gap: 1em;
+    border: none;
+}
+
+#white-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 200px;
+    width: auto;
+    margin: 1em;
+    gap: 1em;
+    border: none;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+}
