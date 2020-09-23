@@ -1,0 +1,94 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    color: white;
+}
+
+.green-background {
+    background-color: green;
+    width: 30%;
+    height: 10vh;
+    
+}
+
+.yellow-background {
+    background-color: yellow;
+    width: 70%;
+    height: 10vh;
+}
+
+.pink-background {
+    background-color: fuchsia;
+    display: grid;
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+}
+
+.blue-background {
+    background-color: blue;
+    width: 50vw;
+    height: 20vh;
+    text-align: center;
+}
+
+.red-background {
+    background-color: red;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    width: 30vw;
+    height: 10vh;
+}
+
+.lightgreen-background {
+    background-color: lightgreen;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    width: 30vw;
+    height: 10vh;
+}
+
+.purple-background {
+    background-color: purple;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+
+#top-container {
+    display: grid | inline-grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#content1 {
+    text-align: center;
+}
+
+#content2 {
+    display: grid;
+    justify-content: space-between;
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+#blank {
+    width: 25%;
+    height: 60px;
+}
+
+#middle-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+#footer {
+    display: grid;
+}
