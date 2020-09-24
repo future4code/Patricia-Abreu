@@ -1,0 +1,149 @@
+body {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    border: 0.1em solid black;
+}
+
+#first-block {
+    background-color: red;
+    height: 12em;
+    border: none;
+}
+
+.blue-block {
+    background-color: blue;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 15em;
+}
+
+.yellow-block {
+    background-color: yellow;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 15em;
+}
+
+.green-block {
+    background-color: green;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 15em;
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 20em;
+
+}
+
+.white-block {
+    background-color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 15em;
+}
+
+#main-container {
+    border: none;
+}
+
+#containeres {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1em;
+    gap: 1em;
+    border: none;
+}
+
+#black-blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1em;
+    gap: 1em;
+    border: none;
+}
+
+#white-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1em;
+    gap: 1em;
+    border: none;
+}
+
+
+/*Tablets*/
+
+@media screen and (min-device-width: 421px) and (max-device-width: 800px) {
+    
+    #first-block {
+        height: 10em;
+        }
+        
+    #containeres{
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        height: auto;
+        }
+
+    #black-blocks {
+        display: grid;
+        grid-column: 1fr 1fr;
+        height: auto;
+        }
+
+    #white-blocks {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        height: auto;
+        }
+
+    .green-block {
+        grid-column: 1 / 3;
+        }
+        
+    #eleven {
+        grid-column: 1 / 3;
+        }
+}
+
+  /* Phones */  
+
+@media screen and (min-device-width: 320px) and (max-device-width: 420px) {
+
+    #first-block {
+        height: 6em;
+    }
+
+    #containeres {
+        display: grid;
+        grid-template: 1fr / 1fr;
+        height: auto;
+    }
+    
+    #black-blocks {
+        display: grid;
+        grid-template: 1fr / 1fr;
+        height: auto;
+    }
+
+    #white-blocks {
+        display: grid;
+        grid-template: 1fr / 1fr;
+        height: 9em;
+    }
+}    
