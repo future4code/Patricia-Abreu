@@ -1,0 +1,81 @@
+body {
+    display: grid;
+    background: rgb(255, 255, 255); /* TIRAR*/
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: burlywood;
+    padding-left: 2em;
+}
+    
+img {
+    border: 0.3em solid black;
+    width: 20vw;
+    height: auto;
+}
+
+.video1{
+    display: grid;
+
+}
+
+.video2 {
+    display: grid;
+    height: 5vh;
+    width: 7vw;
+}
+
+.video3 {
+    display: grid;
+    height: 5vh;
+    width: 7vw;
+}
+
+.video4{
+    display: grid;
+    height: 5vh;
+    width: 7vw;
+}
+
+.video5{
+    display: grid;
+    height: 5vh;
+    width: 7vw;
+}
+
+.video6{
+    display: grid;
+    height: 5vh;
+    width: 7vw;
+}
+
+.video7{
+    display: grid;
+    height: 5vh;
+    width: 7vw;
+}
+
+.video8 {
+    display: grid;
+    height: 5vh;
+    width: 7vw;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+    padding: 4em;
+    gap: 4em;
+    text-align: center;
+}
+
+.footer {
+    background: rgb(192, 185, 255);
+    height: 10vh;
+}
