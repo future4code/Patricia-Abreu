@@ -108,28 +108,18 @@ ul {
     text-align: center;
 }
 
-.containerVideo {
-    display: grid;
-    width: auto;
-    height: 30em;
-    justify-content: center;
-    text-align: center;
+#containerVideo2 {
+    display: block;
+    padding: 6em;
 }
 
-.section2 {
-    display: grid;
-    grid-template-columns: 1fr / 1fr;
-    grid-template-rows: 1fr / 1fr;
-    width: 40em;
-    height: auto;
+#containerVideo3 {
+    display: block;
+    padding: 6em;
 }
 
-.videoPlayer1 {
-    width: auto;
+video {
+    display: block;
     height: auto;
-}
-
-.videoPlayer2 {
-    width: auto;
-    height: auto;
+    width: 50em;
 }
