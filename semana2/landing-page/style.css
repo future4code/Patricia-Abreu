@@ -1,6 +1,6 @@
 body{
     height: auto;
-    width: 1280px;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -44,15 +44,47 @@ ul.topnav li.right {
     width: 100%;
 }
 
-#corpo {
+#container {
     display: block;
     width: 100%;
     opacity: 70%;
+    margin: 0;
+    padding: 0;
 }
 
 img {
     max-width: 100%;
     height: auto;
+    opacity: 70%;
+}
+
+.text-principal {
+    position: relative;
+    width: 27%;
+    height: 60%;
+    background-color: #ff914d;
+    color: white;
+    top: -45em;
+    left: 3em;
+}
+
+p {
+    font-size: 5em;
+    font-family: 'Rubik', sans-serif;
+}
+
+footer {
+    position: absolute;
+    padding: 0.5em;
+    background: #ff914d;
+    text-align: left;
+    width: 100%;
+}
+
+h3{
+    font-size: 0.8em;
+    font-family: 'Rubik', sans-serif;
+    color: white;
 }
 
 cor #ff914d LARANJA
