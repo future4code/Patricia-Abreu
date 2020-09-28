@@ -1,12 +1,15 @@
-let arrays = ["pipoca doce", "pizza", "açaí", "bolo de morango e chantily", "canelone"]
+let Perguntas = ["Hoje é um dia par?", "Está chovendo na sua cidade?", "Você sabe andar de bicicleta?"]
 
-Array [1] = "pipoca doce"
-Array [2] = "pizza"
-Array [3] = "açaí"
-Array [4] = "bolo de morango e chantily"
-Array [5] = "canelone"
+Perguntas [1] = "Hoje é um dia par?"
+Perguntas [2] = "Está chovendo na sua cidade?"
+Perguntas [3] = "Você sabe andar de bicicleta?"
 
 
-prompt("Qual sua comida preferida?", "Resposta")
+let Respostas = [true, true, true]
+Respostas[1] =  true
+Respostas[2] =  true
+Respostas[3] =  true
 
-Array [2] = Resposta
+console.log("Hoje é um dia par?", Respostas[1])
+console.log("Está chovendo na sua cidade?", Respostas[2])
+console.log("Você sabe andar de bicicleta?", Respostas[3])
