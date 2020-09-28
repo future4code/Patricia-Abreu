@@ -1,0 +1,28 @@
+a)
+a = 10
+b = 10
+
+console.log (b)
+
+b = 5
+console.log(a,b)
+
+a = 10 /* 'a' permanece o mesmo valor porque não foi modificado*/
+b = 5
+
+---------------------------
+
+b)
+a = 10
+b = 20
+c = a
+b = c
+a = b
+
+console.log (a, b, c)
+
+c = 10
+b = 10 /* 'b' é 10 porque foi atribuído valor 10 à 'c' */
+a = 10 /* 'a' é 10 porque foi atribuído novo valor a 'b' */
+
+-------------------------
