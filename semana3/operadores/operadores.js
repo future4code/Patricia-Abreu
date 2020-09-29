@@ -61,7 +61,36 @@ console.log("Sua idade é maior do que a do seu melhor amigo?", maior)
 let numero = prompt("Insira um número par:")
 console.log(numero)
 
-let par = numero/2
+console.log(numero%2)
 
-console.log(par%2)
+// o resto da divisão é sempre o número 0.
 
+
+
+3. 
+
+let listaDeTarefas = []
+
+tarefa0 = prompt("Cite 3 tarefas que você precisa realizar no dia:")
+tarefa1 = prompt("Cite outra tarefa: 1")
+tarefa2 = prompt("Cite mais uma tarefa: 2")
+
+listaDeTarefas.push(tarefa0)
+listaDeTarefas.push(tarefa1)
+listaDeTarefas.push(tarefa2) 
+
+console.log(listaDeTarefas)
+
+let tarefaRealizada = prompt("Das 3 tarefas citadas, qual você já realizou: 0, 1 ou 2?")
+
+listaDeTarefas.splice(tarefaRealizada)
+
+console.log(listaDeTarefas)
+
+
+4.
+
+let nomeDoUsuario = prompt("Qual é o seu nome?")
+let emailDoUsuario = prompt("Digite o seu e-mail")
+
+console.log("O e-mail " + emailDoUsuario + " foi cadastrado com sucesso. Seja bem-vindo(a)," + nomeDoUsuario + "!")
