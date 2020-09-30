@@ -1,0 +1,125 @@
+body {
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    }
+
+header {
+    flex-flow: wrap;
+    background: rgb(182, 182, 182);
+    height: 10em;
+    width: auto;
+    padding-top: 1em;
+    margin: 0;
+    }
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    }
+
+#divBusca{
+    float: right;
+    width: 4em;
+    height: 3em;
+    }
+
+#txtBusca {
+    float: right;
+    width: auto;
+    height: 2.5em;
+    margin-bottom: 2em;
+    }
+ 
+#containerVideo {
+    display: grid;
+}
+
+img {
+    width: 20vw;
+    height: auto;
+    border: 0.2em solid black;
+    }
+
+.video1{
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    }
+
+.video2 {
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    }
+
+.video3 {
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    }   
+
+.video4{
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    }
+
+.video5{
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    }
+
+.video6{
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    }
+
+.video7{
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    }
+
+.video8 {
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    }
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+    padding: 2em;
+    gap: 2em;
+    text-align: center;
+}
+
+.footer {
+    background: rgb(182, 182, 182);
+    height: 10vh;
+    width: auto;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#containerVideo2 {
+    display: block;
+    padding: 6em;
+}
+
+#containerVideo3 {
+    display: block;
+    padding: 6em;
+}
+
+video {
+    display: block;
+    height: auto;
+    width: 50em;
+}
