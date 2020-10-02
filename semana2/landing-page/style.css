@@ -1,0 +1,379 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+/* barra de navegação*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+    background-color: #ff914d;
+}
+      
+ul.topnav li {
+    float: left;
+    justify-content: center;
+    align-content: center;
+}
+      
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 26px 18px;
+    text-decoration: none;
+}
+      
+ul.topnav li a:hover:not(.active) {
+    background-color: #ffa871;
+}
+      
+ul.topnav li a.active {
+    background-color: #44a747;
+}
+      
+ul.topnav li.right {
+    float: right;
+}
+
+.logo-min {
+    width: 90%;
+    padding: 0.5em;
+}
+
+.navContainer {
+    display: block;
+    background-color:#ff914d;
+    width: 100%;
+}
+
+/*corpo do site*/
+#container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+    margin: 0;
+    padding: 0;
+}
+/*imagem de fundo do corpo do site - pág 01 */
+#container> .bckg1 {
+    display: flex;
+    max-width: 100%; 
+    max-height: 100%;
+    opacity: 70%;
+}
+
+#container> .text-principal {
+    position: absolute;
+    height: 10em;
+    width: 14em;
+    text-align: left;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    top: 22em;
+    left: 10em;
+    animation-name: home;
+    animation-duration: 2s;  
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+  }
+
+#container> .text-principal> .p1 {
+    font-size: 5em;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*página 2 - conta corrente*/
+#conta-digital {
+    max-width: 100%; 
+    max-height: 100%;
+    margin-top: 5em;;
+    margin-bottom: -0.5em;
+    padding: 0;
+}
+
+.conta-digital img {
+    margin: 0;
+    padding: 0;
+}
+
+.text-conta {
+    position: absolute;
+    color: #ffbd59;
+    text-align: right;
+    top: 8em;
+    right: 3em;
+    width: 22em;
+}
+
+ #conta-digital> .text-conta {
+    font-size: 2em;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*página 3 - cartão de crédito*/
+
+#cartao {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#cartao> img {
+    width: 100%;
+    opacity: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+#cartao> .p4 {
+    position: absolute;
+    color: #ffbd59;
+    text-align: right;
+    right: 3em;
+    top: 4em;
+}
+
+.p4 {
+    font-size: 2em;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#cartao> .text-cartao1 {
+    position: absolute;
+    height: 8em;
+    width: 18em;
+    font-size: 2em;
+    color: rgb(75, 75, 75);
+    font-family: 'Rubik', sans-serif;
+    text-align: right;
+    right: 3em;
+    top: 5em;
+}
+
+#cartao> .text-cartao2 {
+    position: absolute;
+    font-size: 2em;
+    height: 8em;
+    width: 14em;
+    color: rgb(75, 75, 75);
+    font-family: 'Rubik', sans-serif;
+    text-align: left;
+    left: 3em;
+    top: 17em;
+    }
+
+/*rodapé - footer do site*/
+
+footer {
+    display: flex;
+    position: absolute;
+    background: #ff914d;
+    height: 3em;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
+footer > .text-footer {
+    font-size: 1em;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+footer > .footer-img {
+    display: flex;
+    position: sticky;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+figure {
+    float: right;
+    width: 30%;
+    font-size: 0.7em;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* animação da página inicial*/
+@keyframes home {
+    from {left: 0px; background-color: transparent; color: transparent; text-shadow: none;}
+    to {left: 160px;}
+}
+
+/* adaptação para telas entre 420 à 800px*/
+@media screen and (min-device-width: 421px) and (max-device-width: 800px){
+
+#container> .text-principal {
+        height: 7em;
+        width: 11em;
+        top: 19em;
+        left: 6em;
+}
+#container> .text-principal> .p1 {
+    font-size: 2.8em;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+    @keyframes home {
+        from {left: 0px; background-color: transparent; color: transparent; text-shadow: none;}
+        to {left: 95px;}
+    }
+
+.text-conta {
+    width: 45%;
+    top: 7em;
+    right: 1em;
+    font-size: 2em;
+}
+
+#cartao> .p4 {
+    right: 2em;
+    top: 5.5em;
+}
+
+.p4 {
+    font-size: 1.9em;
+}
+
+#cartao> .text-cartao1 {
+    height: 5em;
+    width: 17em;
+    font-size: 1.7em;
+    right: 2em;
+    top: 6.5em;
+}
+
+#cartao> .text-cartao2 {
+    font-size: 1.7em;
+    height: 8em;
+    width: 14em;
+
+    left: 2.5em;
+    top: 15em;
+    }
+}
+
+/* adaptação para telas entre 320 à 420px*/
+@media screen and (min-device-width: 320px) and (max-device-width: 420px) {
+
+
+#container{
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+.bckg1 {
+    width: auto;
+    object-fit: cover;
+}
+
+#container> .text-principal {
+    left: 5em ;
+    top: 30em;
+    text-align: center;
+    animation: none;
+}
+#container> .text-principal> .p1 {
+    font-size: 1.7em;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.conta-digital {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    margin-top: -4em;
+}
+
+#conta-digital> .text-conta {
+    top: 36em;
+    left: 3.5em;
+    font-size: 1em;
+    text-align: center;
+}
+
+.text-conta {
+    width: 64%;
+    top: 7em;
+    right: 1em;
+    font-size: 2em;
+}
+
+#cartao> .p4 {
+    right: 2em;
+    top: 11em;
+    left: 1.5em;
+    text-align: center;
+}
+
+.p4 {
+    font-size: 1.3em;
+}
+
+#cartao> .cartao-credito {
+    margin-top: 9.3em; 
+}
+#cartao> .text-cartao1 {
+    height: 2.5em;
+    width: 12em;
+    font-size: 1.3em;
+    top: 13em;
+    left: 2.8em;
+    text-align: center;
+}
+
+#cartao> .text-cartao2 {
+    height: 3em;
+    width: 12em;
+    font-size: 1.3em;
+    top: 21em;
+    left: 2.8em;;
+    text-align: center;
+    }
+
+footer {
+    position: sticky;
+    height: 4em;
+    width: 100%;
+    bottom: 0;
+    }
+
+footer> .text-footer {
+    text-align: left;
+    margin-top: 0.2em;
+    left:0;
+}
+
+footer> .footer-img {
+    bottom: 0;
+    margin: 0;
+}
+    
+figure {
+    height: auto;
+    width: 80%;
+    margin-top: 0.5em;
+    padding: 0;
+}
+
+
+
+}
