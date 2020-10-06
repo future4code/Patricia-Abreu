@@ -200,6 +200,141 @@ for (let i = 0; i < arrayOriginal.length; i++) {
 console.log("O maior número é " + valorMaximo + " e o menor é " + valorMinimo + ".") 
 
 incompleto*/
+//----------------------------------------------------------------------------------------
+
 
 FUNÇÕES
 
+// EXERCÍCIO 1
+
+function minhaFuncao(variavel) {
+	return variavel * 5
+}
+minhaFuncao(2)
+minhaFuncao(10)
+
+//a) Será impresso no console os números 10 e 50 (correspondente, respectivamente à console.log(minhaFuncao(2))
+// ... e console.log(minhaFuncao(10)).
+
+//b) Apareceria somente o 50, pois o segundo valor atribuído a variável é 10, substintuindo assim primeiro valor atribuído a ela que era 2.
+
+
+//EXERCÍCIO 2
+
+let arrayDeNomes = ["Darvas", "Caio", "João", "Paulinha", "Soter"];
+
+const outraFuncao = function(array) {
+	for (let i = 0; i < 2; i++) {
+		console.log(array[i])
+	}
+}
+outraFuncao(arrayDeNomes)
+
+// a) Darvas e Caio.
+// b) Amanda e Caio.
+
+
+
+// EXERCÍCIO 3
+
+const metodo = ([2,4,6]) => {
+  let arrayFinal = [];
+
+  for (let x of array) {
+		if (x % 2 === 0) {
+	    arrayFinal.push(x * x)
+		}
+  }
+  return arrayFinal;
+}
+// RESPOSTA: Ele vai pegar só os números positivos do array, multiplicar por ele mesmo e inserir no arrayFinal.
+
+
+
+ //EXERCÍCIO 4
+ a)
+ let meusDados = () => {console.log("Eu sou Patrícia, tenho 29 anos, moro em Florianópolis e sou estudante.")}
+ meusDados()
+
+b)
+let dadosPessoais = (nome, idade, cidade, estudante) => {
+  if (estudante) {
+    estudante = "sou estudante"
+  } else {estudante = "não sou estudante"
+}
+  console.log(`Eu sou a ${nome}, tenho ${idade}, moro na ${cidade} e sou ${estudante}`)
+}
+  let nome = "Patrícia"
+  let idade = "29"
+  let cidade = "Florianópolis"
+  let estudante = true
+    
+  const resultado = dadosPessoais(nome, idade, cidade, estudante)
+  
+  console.log(resultado)
+
+
+
+  //EXERCÍCIO 5
+  
+a)
+  function somaDois (a,b){
+  const soma = a+b
+  return(1+2)
+  }
+  somaDois(1,2)
+  console.log(somaDois(1,2))
+
+
+b) 
+ function doisNumeros (a,b){
+   if(a>=b) {return true
+  } else {
+     return false}
+   }
+  doisNumeros(a,b)
+  console.log(return doisNumeros(1,2))
+
+
+c)
+function repetirMensagem (mensagem){
+  for(let i = 0; i < 10; i++)
+  console.log(mensagem)}
+
+repetirMensagem ("Uma mensagem")
+
+
+//EXERCÍCIO 6
+
+a)
+const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+let tamanhoArray = (array)=>{
+return array.length
+}
+
+console.log(tamanhoArray(array))
+
+b) */ let novoNumero = (num) => {
+  if(num % 2 === 0) { 
+    let par = true
+  } else {
+    let impar =  false
+    }
+    return (num % 2 === 0);
+  }
+
+
+c)
+const array = [10, 23, 82, 64]
+
+const numPar = (array) => {
+let novoArray = [];
+    for(let i of array){
+        if (i % 2 === 0){
+          novoArray.push(i)
+         }
+    }
+return novoArray.length;
+}
+
+d) NÃO REALIZADO
