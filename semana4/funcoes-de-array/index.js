@@ -9,11 +9,13 @@ function imprimirDespesas(despesas){
     divDespesas.innerHTML = '<p><u>Despesas Detalhadas</u></p>'
 
     // AQUI VEM A IMPLEMENTAÇÃO
-    divDespesas.forEach((arrDespesas, index, divDespesas ) => {
-        arrDespesas[index]
-    })
+    
+    despesas.forEach((despesas => {
+        divDespesas.innerHTML += `<p> R$ ${despesas.valor} |
+        tipo: ${despesas.tipo} | Descrição: ${despesas.descricao}</p>`;
+    }))
 }
-console.log(adicionarDespesa)
+
 
 // SEGUNDO 
 function imprimirExtrato(){
@@ -25,10 +27,26 @@ function imprimirExtrato(){
 
 
     // AQUI VEM A IMPLEMENTAÇÃO
+    arrDespesas.forEach((despesa, index, arrDespesas) => {
+        gastoTotal += despesa.valor
+    
+        switch(despesa.tipo) {
+            case 'alimentação':
+                gastoAlimentacao += despesa.valor
+                break
+            case 'utilidades':
+                gastoUtilidades += despesa.valor
+                break
+            case 'viagem':
+                gastoViagem += despesa.valor
+        }
+    })
 
     divExtrato.innerHTML = `<p>Extrato: Gasto Total: R$${gastoTotal} | Alimentação: R$${gastoAlimentacao} | 
                                         Utilidades: R$${gastoUtilidades} | Viagem: R$${gastoViagem}</p>`
+
 }
+
 
 
 function limparFiltros() {
@@ -75,13 +93,18 @@ function filtrarDespesas(){
     let valorMax = Number(document.getElementById('valorFiltroMax').value)
 
 
-    let despesasFiltradas // AQUI NESSA VARIÁVEL VEM A IMPLEMENTAÇÃO
-
+    // AQUI NESSA VARIÁVEL VEM A IMPLEMENTAÇÃO
+    let despesasFiltradas = arrDespesas.filter((despesa, index, arrDespesas) => {
+        if((despesa.tipo === tipoFiltro || tipoFiltro === 'todos') && (despesa.valor >= valorMin) && (despesa.valor <= valorMax)){
+        return true
+    } else {
+        return false
+    }
+    })
+    
     imprimirDespesas(despesasFiltradas)
 }
-
-
-
+   
 
 
 
