@@ -135,3 +135,51 @@ console.log("A diferença entre " + valorA + " e " + valorB + " é igual a " + r
     console.log("A diferença é um número negativo!")
 }
 
+
+
+EXERCÍCIOS DE FUNÇÕES
+
+1.
+let arrayDeNumeros = [40, 70, 45, 22, 13, 10, 88, 92, 103]
+let primeiroMaior = 0
+let primeiroMenor = Infinity
+
+for(let numero of arrayDeNumeros){
+    if(numero > primeiroMaior){
+        primeiroMaior = numero;
+    }
+    if (numero < primeiroMenor){
+        primeiroMenor = numero;
+    }
+}
+
+
+let indice = arrayDeNumeros.indexOf(primeiroMenor);
+
+while(indice >= 0){
+    arrayDeNumeros.splice(indice, 1);
+    indice = arrayDeNumeros.indexOf(indice)
+}
+
+let indice2 = arrayDeNumeros.indexOf(primeiroMaior);
+
+while(indice2 >= 0){
+    arrayDeNumeros.splice(indice2, 1);
+    indice2 = arrayDeNumeros.indexOf(indice2)
+}
+
+let segundoMaior = 0
+let segundoMenor = Infinity
+
+
+for(let numero of arrayDeNumeros){
+    if(numero > segundoMaior){
+        segundoMaior = numero;
+    }
+    if (numero < segundoMenor){
+        segundoMenor = numero;
+    }
+}
+
+console.log(segundoMaior + " é o segundo MAIOR número do array.")
+console.log(segundoMenor + " é o segundo MENOR número do array.")
