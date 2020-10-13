@@ -276,3 +276,18 @@ let menorIdade = pessoas.filter((elemento) => {
 })
 
 console.log(menorIdade)
+
+
+2.
+a)
+const array = [1, 2, 3, 4, 5, 6];
+
+let dobroArray = array.map(function(num){
+    return num * 2;
+})
+
+console.log(dobroArray)
+
+
+
+b)
