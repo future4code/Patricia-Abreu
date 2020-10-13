@@ -189,3 +189,12 @@ let alerta = () => {
 alerta()
 
 
+EXERCÍCIOS DE OBJETOS
+1.
+ARRAYS são vários elementos dentro de uma variável. Um array pode guardar valores em strings ou números. Portanto, serve para guardar todo e 
+qualquer tipo de listas que contenham essas características.
+
+OBJETOS são 'containeres' que guardam vários elementos de características distintas, como por exemplo, tipo de material do container, peso,
+altura etc. Logo, o objeto é usado quando é necessário guardar vários elementos, de tipos diferentes, em conjunto.
+
+2.
