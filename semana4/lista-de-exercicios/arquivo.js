@@ -250,9 +250,9 @@ EXERCÍCIOS DE FUNÇÕES DE ARRAYS
 1.
 a)
 const pessoas = [
-    {nome: "Pedro", idade: 20}
-	{nome: "João", idade: 10}
-	{nome: "Paula", idade: 12}
+    {nome: "Pedro", idade: 20},
+	{nome: "João", idade: 10},
+	{nome: "Paula", idade: 12},
 	{nome: "Artur", idade: 89}
 ]
 
@@ -263,5 +263,16 @@ let maiorIdade = pessoas.filter((elemento) => {
 console.log(maiorIdade)
 
 
-
 b)
+const pessoas = [
+    {nome: "Pedro", idade: 20},
+	{nome: "João", idade: 10},
+	{nome: "Paula", idade: 12},
+	{nome: "Artur", idade: 89}
+]
+
+let menorIdade = pessoas.filter((elemento) => {
+    return elemento.idade<=20
+})
+
+console.log(menorIdade)
