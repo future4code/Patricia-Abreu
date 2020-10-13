@@ -211,3 +211,16 @@ let criaRetangulo = (lado1, lado2) => {
 
 criaRetangulo(10,7)
 
+
+
+3. 
+
+const aBeautifulMind = {
+    titulo: 'A beautiful mind',
+    ano: '2001',
+    diretor: 'Ron Howard',
+    ator:'Russell Crowe',
+    atriz:'Jennifer Connelly',
+}
+
+console.log('Venha assistir ao filme ' + aBeautifulMind.titulo + ' de ' + aBeautifulMind.ano + ' dirigido por ' +  aBeautifulMind.diretor + ' e estrelado por ' + aBeautifulMind.ator + ' e ' + aBeautifulMind.atriz + '.')
