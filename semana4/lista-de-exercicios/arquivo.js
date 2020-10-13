@@ -33,4 +33,9 @@ Ao final, o console vai imprimir a quantidade de números existente na 'const nu
 os números pares, e por fim a quantidade de números na 'const array2' que é dos números ímpares.
 Em resumo, essa codificação separa do array principal os números pares e ímpares para seus respectivos 'arrays'.
 
-4. 
+4. Na questão em comento há um array de números chamado 'const numeros'. Há ainda duas variáveis, respectivamente de nome e valor: 'numero1'
+com valor atribuído como 'infinity' e 'numero2' de valor 0.
+Abaixo há um laço for, que procura em cada numero do array 'numeros' duas condições sucessivas: primeiro o menor número comparado a variável
+'numero1', de valor 'infinity'. Posteriormente compara se o mesmo número é maior qua variável 'numero2' de valor 0.
+Ao final, o console irá imprimir o menor e o maior número constante no array 'numeros'.
+Portanto, pode-se dizer que a função busca saber o menor e o maior número existente no array.
