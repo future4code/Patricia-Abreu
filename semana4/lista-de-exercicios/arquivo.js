@@ -291,3 +291,11 @@ console.log(dobroArray)
 
 
 b)
+
+const array2 = ['1', '2', '3', '4', '5', '6'];
+
+let triploArray = parseInt(array2.map(function(num))){
+    return num * 3;
+}
+
+console.log(triploArray)
