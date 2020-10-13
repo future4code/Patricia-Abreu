@@ -214,7 +214,6 @@ criaRetangulo(10,7)
 
 
 3. 
-
 const aBeautifulMind = {
     titulo: 'A beautiful mind',
     ano: '2001',
@@ -224,3 +223,23 @@ const aBeautifulMind = {
 }
 
 console.log('Venha assistir ao filme ' + aBeautifulMind.titulo + ' de ' + aBeautifulMind.ano + ' dirigido por ' +  aBeautifulMind.diretor + ' e estrelado por ' + aBeautifulMind.ator + ' e ' + aBeautifulMind.atriz + '.')
+
+
+
+4.
+const pessoaQualquer = {
+    nome: 'Juliana',
+    idade: '27',
+    email: 'ju@email.com',
+    endereco: 'Rua Santa Maria, n3'
+}
+
+let anonimizarPessoa = {
+    ...pessoaQualquer,
+    nome: 'ANÔNIMO',
+    idade: 'ANÔNIMO',
+    email: 'ANÔNIMO',
+    endereco: 'ANÔNIMO',
+ }
+console.log(anonimizarPessoa.nome)
+
