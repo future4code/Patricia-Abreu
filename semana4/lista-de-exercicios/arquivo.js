@@ -198,3 +198,16 @@ OBJETOS são 'containeres' que guardam vários elementos de características dis
 altura etc. Logo, o objeto é usado quando é necessário guardar vários elementos, de tipos diferentes, em conjunto.
 
 2.
+
+let criaRetangulo = (lado1, lado2) => {
+    const retangulo = {
+        largura : lado1,
+        altura: lado2,
+        perímetro: (2 * (lado1 + lado2)),
+        área: lado1 * lado2,
+    }
+    return retangulo
+}
+
+criaRetangulo(10,7)
+
