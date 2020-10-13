@@ -45,7 +45,7 @@ Portanto, pode-se dizer que a função busca saber o menor e o maior número exi
 
 EXERCÍCIOS DE LÓGICA DE PROGRAMAÇÃO
 
-1. Pode-se percorrer uma lista por meio do laço 'for'.
+1. Pode-se percorrer uma lista por meio do laço 'for', 'while' ou 'forEach'.
 
 Exemplo 01: 
 
@@ -69,3 +69,17 @@ while (i < listaDeFrutas.length) {
     //ação
     i++
 }
+
+
+
+
+2.
+a) false
+b) false
+c) false
+d) true
+e) true
+
+
+
+3.
