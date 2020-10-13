@@ -25,4 +25,12 @@ tipo de investimento previsto na função.
 
 
 
-3.
+3. Nesse exercício a 'const numero' dispõe de de uma coletânea de números aleatórios. As variáveis 'const array1' e 'const array2' são
+arrays vazios que receberão números posteriormente.
+Abaixo, o laço for dispõe que para cada 'numero' existente no array 'numeros', sendo ele um número par - ou seja, que dividido por 2 tem
+resto zero (numero % 2 === 0), este será adicionado a variável 'const array1', e não sendo irá para a variável 'const array2'.
+Ao final, o console vai imprimir a quantidade de números existente na 'const numeros', a quantidade existente na 'const array1' - que são
+os números pares, e por fim a quantidade de números na 'const array2' que é dos números ímpares.
+Em resumo, essa codificação separa do array principal os números pares e ímpares para seus respectivos 'arrays'.
+
+4. 
