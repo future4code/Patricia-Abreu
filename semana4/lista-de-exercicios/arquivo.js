@@ -107,3 +107,31 @@ if ( ladoA === ladoB && ladoB === ladoC) {
         } else {
             console.log("Triângulo ISÓSCELES")
         }
+
+
+5.
+i)
+let valorA = Number(prompt("Digite um número."))
+let valorB = Number(prompt("Digite outro número."))
+
+if (valorA > valorB) {
+    console.log( valorA + " é MAIOR que " + valorB)
+} else {
+    console.log(valorB + " é MAIOR que " valorA)}
+
+ii)
+if (valorA % valorB === 0) {
+    console.log(valorA + " é divisível por " + valorB)
+} else {
+    console.log(valorA + " não é divisível por " + valorB)
+}
+
+iii)
+let resultado = valorA - valorB
+
+if(resultado >= 0 ){
+console.log("A diferença entre " + valorA + " e " + valorB + " é igual a " + resultado)
+} else {
+    console.log("A diferença é um número negativo!")
+}
+
