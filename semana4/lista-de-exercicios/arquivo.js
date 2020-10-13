@@ -153,16 +153,13 @@ for(let numero of arrayDeNumeros){
     }
 }
 
-
 let indice = arrayDeNumeros.indexOf(primeiroMenor);
-
 while(indice >= 0){
     arrayDeNumeros.splice(indice, 1);
     indice = arrayDeNumeros.indexOf(indice)
 }
 
 let indice2 = arrayDeNumeros.indexOf(primeiroMaior);
-
 while(indice2 >= 0){
     arrayDeNumeros.splice(indice2, 1);
     indice2 = arrayDeNumeros.indexOf(indice2)
@@ -170,7 +167,6 @@ while(indice2 >= 0){
 
 let segundoMaior = 0
 let segundoMenor = Infinity
-
 
 for(let numero of arrayDeNumeros){
     if(numero > segundoMaior){
@@ -180,6 +176,16 @@ for(let numero of arrayDeNumeros){
         segundoMenor = numero;
     }
 }
-
 console.log(segundoMaior + " é o segundo MAIOR número do array.")
 console.log(segundoMenor + " é o segundo MENOR número do array.")
+
+
+
+2. 
+let alerta = () => {
+    alert("Hello Future4");
+}
+
+alerta()
+
+
