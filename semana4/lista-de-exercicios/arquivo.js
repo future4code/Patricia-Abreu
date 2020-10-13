@@ -96,3 +96,14 @@ console.log(i*2)
 
 
 4. 
+let ladoA = 1
+let ladoB = 2
+let ladoC = 3
+
+if ( ladoA === ladoB && ladoB === ladoC) {
+    console.log("Triângulo EQUILÁTERO")
+} else if (ladoA !== ladoB && ladoB !== ladoC && ladoC !== ladoA) {
+        console.log("Triângulo ESCALENO")
+        } else {
+            console.log("Triângulo ISÓSCELES")
+        }
