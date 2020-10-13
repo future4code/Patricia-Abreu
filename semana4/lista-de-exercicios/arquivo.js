@@ -83,3 +83,16 @@ e) true
 
 
 3.
+
+const quantidadeDeNumerosPares =
+
+let i = 0
+
+while(i <= quantidadeDeNumerosPares) { //adicionei .length para ler todo o 'array'
+console.log(i*2)
+  i++ // adicionei a condição de incremento
+}
+
+
+
+4. 
