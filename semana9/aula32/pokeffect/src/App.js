@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./styles.css";
 import PokeCard from "./components/PokeCard"
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       });
   }
 
-  changePokeName = event => {
+  const changePokeName = event => {
     setPokeName(event.target.value);
   };
 
