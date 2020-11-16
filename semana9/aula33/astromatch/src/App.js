@@ -1,33 +1,24 @@
-import React, {useState} from 'react';
-import Pretenders from './components/Pretenders';
-import Matches from './components/Matches'
+import React from 'react';
+import ResetButton from './components/ResetButton/ResetButton';
+import Main from './components/Main/Main'
+import styled from 'styled-components';
+
+const AppContainer = styled.div`
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: 0px;
+top: 0px;
+background: #F3F3F3;
+`
 
 function App() {
-
-  const [switchScreen, setSwitchScreen]=useState(false)
-  
-  const onClickChangeState = () => {
-    setSwitchScreen(!switchScreen)
-  }
-  
-  const switchComponent = () => {
-    if (switchScreen) {
-      return <Pretenders 
-      onClickPretenders={onClickChangeState}
-        />
-    } else {
-      return <Matches 
-      onClickMatches={onClickChangeState}
-      />
-    }
-  }
-
   return (
-    <div>
-    testes
-      {switchComponent()}
-    </div>
-  )
+    <AppContainer>
+      <Main />
+      <ResetButton />
+    </AppContainer>
+  );
 }
 
 export default App;
