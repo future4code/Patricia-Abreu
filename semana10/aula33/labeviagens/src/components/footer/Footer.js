@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterContainer = styled.div`
+display: flex;
 position: absolute;
 bottom: 0;
 width: 100%;
 font-family: 'Roboto', sans-serif, bold;
 height: 40px;
-background-color: #BB9EC7;
+background-color: #ACB5D6;
 text-align: center;
 font-size: 10px;
 padding-top: 4px;

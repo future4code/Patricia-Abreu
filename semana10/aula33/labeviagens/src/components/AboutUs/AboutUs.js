@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const SobreNosContainer = styled.div`
+const AboutUsContainer = styled.div`
 display: block;
 max-height: 1024px;
 font-family: 'Roboto', sans-serif, bold;
@@ -10,9 +10,9 @@ font-size: 14px;
 `
 
 
-function SobreNos() {
+function AboutUs() {
     return (
-      <SobreNosContainer>
+      <AboutUsContainer>
           <h2> A LabeX </h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -30,8 +30,8 @@ function SobreNos() {
             laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
             qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum 
             fugiat quo voluptas nulla pariatur?</p>
-      </SobreNosContainer>
+      </AboutUsContainer>
     );
   }
   
-  export default SobreNos;
+  export default AboutUs;

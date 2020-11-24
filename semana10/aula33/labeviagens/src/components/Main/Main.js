@@ -7,7 +7,7 @@ display: flex;
 flex-direction: row;
 height: 50px;
 padding: 5px;
-background-color: #D2B4DE;
+background-color: #ACB5D6;
 width: auto;
 `
 
@@ -22,14 +22,14 @@ justify-content: center;
 padding: 10px;
 gap: 30px;
 right: 20em;
-margin-left: 44em;
+margin-left: 30em;
 `
 
 const ButtomsMain = styled.div`
 display: flex;
 margin: 0px;
-background-color: #BB9EC7;
-border: 1px solid #BB9EC7;
+background-color: #7887BE;
+border: 1px solid #43559A;
 font-family: 'Roboto', sans-serif, bold;
 justify-content: center;
 align-items: center;
@@ -40,7 +40,7 @@ width: 100px;
 padding: 0px;
 
 :hover {
-    background-color: #E4C8EF;
+    background-color: #ACB5D6;
 }
 `
 
@@ -52,8 +52,10 @@ function Main() {
           </div>
 
           <ButtonContainerMain>
+          <ButtomsMain>Destinos</ButtomsMain>
           <ButtomsMain>Inscrições</ButtomsMain>
           <ButtomsMain>Sobre nós</ButtomsMain>
+          <ButtomsMain>Contato</ButtomsMain>
           <ButtomsMain>Login</ButtomsMain>
           </ButtonContainerMain>
 

@@ -1,22 +1,23 @@
 import React from 'react';
-import Footer from './components/footer/Footer';
-import HomePage from './ApplicationPage/HomePage/HomePage';
 import Main from './components/Main/Main';
-import SobreNos from './components/sobreNos/SobreNos';
-import Register from './ApplicationPage'
-import LoginPage from './components/LoginPage/LoginPage';
+import HomePage from './components/HomePage/HomePage';
+import Footer from './components/Footer/Footer'
+import AboutUs from './components/AboutUs/AboutUs';
+import Register from './components/Register/Register';
+
 
 function App() {
   return (
     <div>
-      <Main/>
-      {/* <HomePage/> */}
-      {/* <SobreNos /> */}
-      {/* <Register /> */}
-      <LoginPage />
-      <Footer/>
+      <Main />
+      {/* <HomePage /> */}
+      <Register />
+      {/* <AboutUs /> */}
+      {/* <LoginPage />*/}
+      <Footer />
     </div>
   );
 }
+
 
 export default App;
