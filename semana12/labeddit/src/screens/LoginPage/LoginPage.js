@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { baseUrl } from '../../constants/constants';
+
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
@@ -8,14 +11,18 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
-import {baseUrl} from '.../constants/constants'
 
 const LoginPage = (props) => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const history = useHistory();
+
+    useEffect (() => {
+        if(localStorage.getItem("token") !== null){
+            history.push("/feed")
+        }
+    },[])
 
     const handleGoToSignUp = () => {
         history.push("/signup")
@@ -40,7 +47,7 @@ const LoginPage = (props) => {
 
         try {
 
-            const response = await axios.post(`${baseUrl}/login`);
+            const response = await axios.post(`${baseUrl}/login`, body);
 
             localStorage.setItem("token", response.data.token);
 
