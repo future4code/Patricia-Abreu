@@ -17,7 +17,6 @@ const SignUpPage = (props) => {
     const [password, setPassword] = useState("")
     const history = useHistory();
 
-
     const handleUsernameChange = (event) => {
         const newUsername = event.target.value;
         setUsername(newUsername)
@@ -33,27 +32,8 @@ const SignUpPage = (props) => {
         setPassword(newPassword)
     }
 
-    const hendleSignUp = async (event) => {
+    const hendleSignUp = (event) => {
         event.preventDefault();
-
-        const body = {
-            email: email,
-	        password: password,
-	        username: username
-        }
-
-        try {
-        const response = await axios.post(`${baseUrl}/signup`, body);
-
-            localStorage.setItem("token", response.data.token);
-
-            history.push("/feed")
-
-
-    } catch(error) {
-        alert("O cadastro falhou. Tente novamente!");
-        console.error(error);
-    }
     }
 
     const hendleGoToLogin = () => {
@@ -120,7 +100,7 @@ const SignUpPage = (props) => {
                 </Button>
                         <Grid container>
                             <Grid item>
-                                <Link href="#" onClick={hendleGoToLogin} variant="body2">
+                                <Link href="#" onClick={hendleGoToSignUp} variant="body2">
                                     {"Já tem conta? Logue-se!"}
                                 </Link>
                             </Grid>
