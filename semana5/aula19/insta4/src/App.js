@@ -76,12 +76,12 @@ class App extends React.Component {
           <input
             value={this.state.valorInputFotoUsuario}
             onChange={this.onChangeInputFotoUsuario}
-            placeholder={"Foto do perfil"}
+            placeholder={"Foto do Perfil"}
           />
           <input
             value={this.state.valorInputFotoPost}
             onChange={this.onChangeInputFotoPost}
-            placeholder={"Foto do post"}
+            placeholder={"Foto do Post"}
           />
           <button onClick={this.addPost}>Adicionar</button>
         </div>
