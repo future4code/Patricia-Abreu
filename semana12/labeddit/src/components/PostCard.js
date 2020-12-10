@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react';
 
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -11,21 +10,16 @@ import Typography from '@material-ui/core/Typography';
 
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+import CommentIcon from '@material-ui/icons/Comment';
+import Button from '@material-ui/core/Button';
 
 const PostCard = (props) => {
-
-    const [expanded, setExpanded] = React.useState(false);
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
 
     return (
         <Card>
             <CardHeader
                 avatar={
                     <Avatar>
-                        R
           </Avatar>
                 }
                 title={props.post.title}
@@ -44,6 +38,12 @@ const PostCard = (props) => {
                 <IconButton >
                     <ArrowUpwardIcon />
                 </IconButton>
+                <Button
+                variant="contained"
+                startIcon={<CommentIcon />}
+                >
+                Comentar
+                </Button>
             </CardActions>
         </Card >
     )
